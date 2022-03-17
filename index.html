@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TO-DO LIST APP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="text-center" style="font-weight: 600; color: #c46b18"> ToDo <span class="span" style="color: rgb(255, 255, 255); font-weight: 600; font-style: italic;">LIST</span></h1>
+        <div class="jumbotron ml-4 bg-dark text-light" >
+                <p style="margin-left: 10%"> <br>“Do one thing at a time. <br> Start the day with a list of things you have to do, and do the most important things first.”</p>
+  
+          
+        </div>
+    </header>
+    <div class="image1 ml-4" >
+        <img src="./images/istockphoto-1285308242-170667a.jpg"  alt="" srcset=""></div>
+       
+        <div class="row ml-5 bg-dark text-white">
+                
+                  <div class="col-md-3  text-light">
+                
+                    <div class="form-group">
+                      <label for="inpNewTask">Create a new task</label>
+                      <input type="text" class="form-control" id="inpNewTask" aria-describedby="newTaskHelp"
+                        placeholder="Please enter your task...">
+                      <small id="newTaskHelp" class="form-text text-muted">Input a short but informative description of your task.</small>
+                    </div>
+                  </div>
+            
+                  <!--  Buttons -->
+                  <div class="col-md-6">
+                    <div class="row mt-4">
+                      <div class="col-1  col-md-6 p-1">
+                        <button class="btn btn-success col" disabled id="btnAdd">
+                          <i class="fas fa-plus-square"></i> Add Task
+                        </button>
+                      </div>
+                      <div class="col-3  col-md-6 p-1">
+                        <button class="btn btn-primary col" disabled id="btnReset">
+                          <i class="fas fa-backspace"></i> Reset Task
+                        </button>
+                      </div>
+                      <div class="col-3 col-md-6  p-1">
+                        <button class="btn btn-info col" disabled id="btnSort">
+                          <i class="fas fa-sort-amount-down"></i> Sort Task
+                        </button>
+                      </div>
+                      <div class="col-3  col-md-6  p-1">
+                        <button class="btn btn-danger col " disabled id="btnRemove">
+                          <i class="fas fa-trash-alt"></i> Remove Task
+                        </button>
+                      </div>
+                    </div>
+            
+                  </div>
+                </div>
+
+          
+        <!-- Task List -->
+        <ul class="row list-group m-2" id="ulTasks" >
+        </ul>
+    </div>
+
+</div>    
+<div id="doodleContainer">
+    <!-- Doddle-->
+    <div id="doodleImg">
+        <img style="text-align: center;height: 1%;width: 7% " src="./images/1635309226669.jpeg">
+    </div>
+    <!-- social link -->
+    <div id="connect">
+        <a href=""><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+    </div>
+</div>
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
